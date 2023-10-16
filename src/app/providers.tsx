@@ -7,11 +7,7 @@ import React from "react";
 export default function Providers({ children }: { children: React.ReactNode }) {
   return (
     <NextUIProvider>
-      <NextThemesProvider
-        attribute="class"
-        defaultTheme="dark"
-        themes={["light", "dark", "modern"]}
-      >
+      <NextThemesProvider attribute="class" defaultTheme="dark">
         {children}
       </NextThemesProvider>
     </NextUIProvider>

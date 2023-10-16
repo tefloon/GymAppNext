@@ -1,8 +1,9 @@
-import Navbar from "@/components/Navbar";
+import MyNavbar from "@/components/Navbar";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Providers from "./providers";
+import MyCustomNavbar from "@/components/MyCustomNavbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,12 +19,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Providers>
-        <body className={`${inter.className} min-h-screen`}>
-          <Navbar />
-          {children}
-        </body>
-      </Providers>
+      <body className={`${inter.className} min-w-[700px]`}>
+        <Providers>
+          <MyCustomNavbar />
+          <main>{children}</main>
+        </Providers>
+      </body>
     </html>
   );
 }

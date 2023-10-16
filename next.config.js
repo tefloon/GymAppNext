@@ -3,6 +3,9 @@ const nextConfig = {
   experimental: {
     serverActions: true,
   },
+  images: {
+    domains: ["https://avatars.githubusercontent.com"],
+  },
 };
 
 module.exports = nextConfig;
