@@ -14,7 +14,7 @@ export default function Navbar() {
               <Link href="/about">About</Link>
             </li>
             <li>
-              <Link href="/calendar">Calendar</Link>
+              <Link href="/todos">TODOs</Link>
             </li>
             <li>
               <Link href="/logout">Logout</Link>

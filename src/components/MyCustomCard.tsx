@@ -3,7 +3,6 @@
 import React from "react";
 import { Divider } from "@nextui-org/divider";
 import { Image } from "@nextui-org/image";
-import { Link } from "@nextui-org/link";
 import { Card, CardHeader, CardBody, CardFooter } from "@nextui-org/card";
 
 type MyCustomCardProps = {

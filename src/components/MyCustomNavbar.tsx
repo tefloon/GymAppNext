@@ -38,8 +38,8 @@ export default function MyCustomNavbar() {
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#">
-            Integrations
+          <Link color="foreground" href="/todos">
+            TODOs
           </Link>
         </NavbarItem>
       </NavbarContent>
