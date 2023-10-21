@@ -14,16 +14,8 @@ export default function MyCustomCard({ title, children }: MyCustomCardProps) {
   const top = title ? (
     <>
       <CardHeader className="flex gap-3">
-        <Image
-          alt="nextui logo"
-          height={40}
-          radius="sm"
-          src="https://avatars.githubusercontent.com/u/86160567?s=200&v=4"
-          width={40}
-        />
-        <div className="flex flex-col">
+        <div className="flex flex-col items-center">
           <p className="text-md">{title}</p>
-          <p className="text-small text-default-500">nextui.org</p>
         </div>
       </CardHeader>
       <Divider />
@@ -33,9 +25,7 @@ export default function MyCustomCard({ title, children }: MyCustomCardProps) {
   return (
     <Card className="min-w-full">
       {top}
-      <CardBody className="flex flex-row items-start justify-items-start ">
-        {children}
-      </CardBody>
+      <CardBody className="">{children}</CardBody>
     </Card>
   );
 }

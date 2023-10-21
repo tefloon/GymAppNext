@@ -14,6 +14,12 @@ export default async function Todos() {
     },
   });
 
+  const people = await prisma.person.findMany({
+    include: {
+      workouts: true,
+    },
+  });
+
   const tasks = projects[0].Tasks;
   console.log(projects);
 

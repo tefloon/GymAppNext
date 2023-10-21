@@ -17,14 +17,16 @@ export default function MyCustomNavbar() {
   return (
     <Navbar>
       <NavbarBrand>
-        <Image
-          alt="nextui logo"
-          height={40}
-          radius="sm"
-          src="https://avatars.githubusercontent.com/u/86160567?s=200&v=4"
-          width={40}
-        />
-        <p className="font-bold text-inherit pl-5">ACME</p>
+        <Link href="/" color="foreground">
+          <Image
+            alt="nextui logo"
+            height={40}
+            radius="sm"
+            src="https://avatars.githubusercontent.com/u/86160567?s=200&v=4"
+            width={40}
+          />
+          <p className="font-bold text-inherit pl-5">Gym App</p>
+        </Link>
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
@@ -32,10 +34,8 @@ export default function MyCustomNavbar() {
             Features
           </Link>
         </NavbarItem>
-        <NavbarItem isActive>
-          <Link href="#" aria-current="page">
-            Customers
-          </Link>
+        <NavbarItem>
+          <Link href="/workout">Workouts</Link>
         </NavbarItem>
         <NavbarItem>
           <Link color="foreground" href="/todos">
